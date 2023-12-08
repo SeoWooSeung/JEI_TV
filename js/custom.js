@@ -71,11 +71,11 @@ $(function () {
         });
     })
 
-    $(function () {
-        $('.mopen').on('click', function () {
-            $('.gnb').toggleClass('on');
-            $(this).toggleClass('on');
-        })
+    
+    $('.mbt').on("click", function () {
+        $('.gnb').toggleClass('on');
+        $('.h1').toggleClass('on');
+        $('.header').toggleClass('on');
     })
 
     // alert('주의! 보다보면 배고플수 있음 !')
