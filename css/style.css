@@ -29,7 +29,7 @@
     margin: 0 auto;
     text-align: center;
     white-space: nowrap;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -192,6 +192,7 @@
     cursor: pointer;
     line-height: 5px;
 }
+
 
 /* -------------main_visual-------------------- */
 
@@ -653,6 +654,7 @@
 }
 
 .main_inner .grid_box figure {
+    position: relative;
     border: 1px solid #ddd;
     border-radius: 20px;
     overflow: hidden;
@@ -664,6 +666,8 @@
     font-size: 16px;
     font-weight: 500;
 }
+
+
 
 /* ----------------------------footer----------------------------------------- */
 
@@ -730,6 +734,7 @@
 }
 
 #footer .ft_inner {
+    position: relative;
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
@@ -772,8 +777,10 @@
 
 #footer .ft_link .icon {
     position: absolute;
-    top: 0;
-    right: 0;
+    display: flex;
+    gap: 10px;
+    top: 10px;
+    right: -120px;
     transform: translate(-50%, -50%);
 }
 
@@ -810,7 +817,7 @@
 #footer .ft_copyright p {
     display: block;
     margin: 30px 0 10px 20px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 20px;
 }
 
@@ -826,10 +833,7 @@
     border: none;
     position: fixed;
     bottom: 100px;
-    right: -100px;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
+    right: 100px;
 }
 
 .totop i {
@@ -844,8 +848,6 @@
 .totop.on {
     top: 840px;
     right: 100px;
-    visibility: visible;
-    opacity: 1;
 }
 
 .tobottom {
@@ -853,10 +855,7 @@
     border: none;
     position: fixed;
     bottom: 100px;
-    right: -100px;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
+    right: 100px;
 }
 
 .tobottom i {
@@ -871,6 +870,21 @@
 .tobottom.on {
     top: 900px;
     right: 100px;
-    visibility: visible;
-    opacity: 1;
+}
+
+#footer .ft_inner .link {
+    position: absolute;
+    top: 35%;
+    right: -48px;
+    transform: translate(-50%, -50%);
+}
+
+#footer .ft_inner .link .lnk {
+    background: #bbb;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 18px;
+    box-shadow: 2px 2px 2px 2px gray;
 }

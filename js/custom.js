@@ -69,10 +69,13 @@ $(function () {
         $('.close').on('click', function () {
             $('.popup').hide();
         });
+    })
 
-        // $('.check').on('change', function () {
-        //     $('.popup').hide();
-        // })
+    $(function () {
+        $('.mopen').on('click', function () {
+            $('.gnb').toggleClass('on');
+            $(this).toggleClass('on');
+        })
     })
 
     // alert('주의! 보다보면 배고플수 있음 !')
